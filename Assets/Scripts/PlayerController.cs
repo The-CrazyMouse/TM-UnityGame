@@ -42,12 +42,12 @@ public class PlayerController : MonoBehaviour
         //Adds Force EVERY FRAME while the input key is being pressed
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
         }
 
         if (Input.GetKey("d"))
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }
     }
 }
